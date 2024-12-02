@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">We value your feedback. Please fill out the form below.</p>
+
+  <form id="survey-form">
+    <!-- Name -->
+    <label id="name-label" for="name">Name:</label>
+    <input id="name" type="text" placeholder="Enter your name" required>
+
+    <!-- Email -->
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" type="email" placeholder="Enter your email" required>
+
+    <!-- Age -->
+    <label id="number-label" for="number">Age:</label>
+    <input id="number" type="number" placeholder="Enter your age" min="10" max="100" required>
+
+    <!-- Dropdown -->
+    <label for="dropdown">What is your favorite type of food?</label>
+    <select id="dropdown">
+      <option value="italian">Italian</option>
+      <option value="mexican">Mexican</option>
+      <option value="indian">Indian</option>
+    </select>
+
+    <!-- Radio Buttons -->
+    <p>What is your preferred meal time?</p>
+    <label><input type="radio" name="meal-time" value="breakfast">Breakfast</label>
+    <label><input type="radio" name="meal-time" value="lunch">Lunch</label>
+    <label><input type="radio" name="meal-time" value="dinner">Dinner</label>
+
+    <!-- Checkboxes -->
+    <p>What activities do you enjoy?</p>
+    <label><input type="checkbox" name="activities" value="reading">Reading</label>
+    <label><input type="checkbox" name="activities" value="sports">Sports</label>
+    <label><input type="checkbox" name="activities" value="traveling">Traveling</label>
+
+    <!-- Textarea -->
+    <label for="comments">Any additional comments?</label>
+    <textarea id="comments" rows="3" cols="30" placeholder="Your comments here..."></textarea>
+
+    <!-- Submit Button -->
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
